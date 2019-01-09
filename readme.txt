@@ -7,7 +7,8 @@
 * 标题重复的也会直接跳过 10个一组插入数据库 如果有一个标题重复这10篇文章都插不进去
 
 
-新增 mip 推送 配置在 mip_post_config.ini
+新增 mip 推送 配置在 mip_post_config.ini 注意计算总量
 token 放在 source/token.txt
 同类型的站可放多条
 运行 mip_post.py 即可
+
