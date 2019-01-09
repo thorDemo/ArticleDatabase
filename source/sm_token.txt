@@ -1,0 +1,1 @@
+curl "http://data.zhanzhang.sm.cn/push?site=mip.jz-card.com&user_name=thortwo@outlook.com&resource_name=mip_add&token=TI_cb3074638c733baacb50ab1b0d68d95e" --data-binary @urls.txt

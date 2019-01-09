@@ -57,7 +57,7 @@ def get_all_urls(post_list, post_num):
 
 if __name__ == '__main__':
     config = ConfigParser()
-    config.read('mip_post_config.ini', 'utf-8')
+    config.read('bd_mip_config.ini', 'utf-8')
     array_path = []
     array_number = []
     # 读取配置文件
@@ -71,7 +71,7 @@ if __name__ == '__main__':
         array_number.append(number)
         array_path.append(list_path)
 
-    tokens = open('source/mip_token.txt', 'r')
+    tokens = open('source/bd_token.txt', 'r')
     # 判断
     is_domain = int(config.get('article', 'domain'))
     is_list = int(config.get('article', 'list'))
