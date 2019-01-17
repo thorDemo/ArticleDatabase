@@ -21,3 +21,12 @@ class FileDelete:
                     print('%s %s' % (txt, size))
                     os.remove(txt)
 
+    @staticmethod
+    def delete_file2(dir_path):
+        for parent, dir_names, filename in os.walk('%s' % dir_path):
+            for name in filename:
+                txt = os.path.join(parent, name)
+                size = FileDelete.get_file_size(txt)
+                if size > 100 or size < 0.5:
+                    print('%s %s' % (txt, size))
+                    os.remove(txt)

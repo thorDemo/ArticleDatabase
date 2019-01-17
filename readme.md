@@ -1,9 +1,17 @@
-### delete_file.py 
-    这个用来删除过大的txt  范围可调
-### changName.py 
-    这个用来把按关机词采集好的文章整合到一个文件夹并添加关键词
-### many_sql.py 
-    这个用来插入数据库
+### main_file.py 
+    print(arg)
+    pool = ThreadPool(7)
+    # 整理文件 
+    # request = makeRequests(ChangeName.change_file, arg)
+    # 删除多余
+    # request = makeRequests(FileDelete.delete_file, arg)
+    [pool.putRequest(req) for req in request]
+    pool.wait()
+  * 先去掉整理文件的注释 先整理文件
+  * 再去掉删除多余文件的注释 删除文件 切勿同时解除注释
+### main_insert.py 
+    这个用来把按关机词采集好的文章发布到数据库
+
 
 * 注意有时候翻译会出错 翻译出来是空白的
 * 文章有些编码错误 插入数据库会直接跳过

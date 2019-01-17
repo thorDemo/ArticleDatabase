@@ -14,10 +14,26 @@ arg1 = []
 #     except Exception as e:
 #         print(e)
 #         continue
+target = config.get('article', 'target1')
+path = config.get('article', 'path1')
+InsertAll.insert_all(target, path)
+
+target = config.get('article', 'target2')
+path = config.get('article', 'path2')
+InsertAll.insert_all(target, path)
+
+target = config.get('article', 'target3')
+path = config.get('article', 'path3')
+InsertAll.insert_all(target, path)
+
+# target = config.get('article', 'target4')
+# path = config.get('article', 'path4')
+# InsertAll.insert_all(target, path)
 
 target = config.get('article', 'target6')
 path = config.get('article', 'path6')
 InsertAll.insert_all(target, path)
+
 target = config.get('article', 'target7')
 path = config.get('article', 'path7')
 InsertAll.insert_all(target, path)
