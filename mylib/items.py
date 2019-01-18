@@ -1,8 +1,8 @@
 from peewee import *
 from datetime import datetime
 
-# db = MySQLDatabase('xbw', host='142.234.162.83', port=3306, user='root', passwd='123456', charset='utf8')
-db = MySQLDatabase('xbw', host='127.0.0.1', port=3306, user='root', passwd='123456', charset='utf8')
+db = MySQLDatabase('xbw', host='142.234.162.83', port=3306, user='root', passwd='123456', charset='utf8')
+# db = MySQLDatabase('xbw', host='127.0.0.1', port=3306, user='root', passwd='123456', charset='utf8')
 
 
 class Article(Model):

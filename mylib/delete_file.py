@@ -13,7 +13,7 @@ class FileDelete:
 
     @staticmethod
     def delete_file(dir_path):
-        for parent, dir_names, filename in os.walk('%sArticle' % dir_path):
+        for parent, dir_names, filename in os.walk('%s/Article' % dir_path):
             for name in filename:
                 txt = os.path.join(parent, name)
                 size = FileDelete.get_file_size(txt)

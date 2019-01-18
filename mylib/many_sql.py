@@ -39,9 +39,9 @@ class InsertAll:
     @staticmethod
     def insert_all(dir_path, article_type='news'):
         arg = []
-        print('%sArticle/' % dir_path)
+        print('%s/Article/' % dir_path)
         print(article_type)
-        for parent, dir_names, filename in os.walk('%sArticle/' % dir_path):
+        for parent, dir_names, filename in os.walk('%s/Article/' % dir_path):
             count = 1
             for name in filename:
                 txt = os.path.join(parent, name)

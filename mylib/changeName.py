@@ -11,7 +11,7 @@ class ChangeName:
 
     @staticmethod
     def change_file(target):
-        os.mkdir('%sArticle/' % target)
+        os.mkdir('%s/Article/' % target)
         # os.mkdir(title)
         for parent, dir_names, filename in os.walk(target):
             for name in filename:
@@ -22,9 +22,9 @@ class ChangeName:
                     print(keywords)
                     if '[' in name:
                         parse = name.replace('[', '[%s,' % keywords)
-                        file1 = open('%sArticle/%s' % (target, parse), 'w+', encoding='gb18030')
+                        file1 = open('%s/Article/%s' % (target, parse), 'w+', encoding='gb18030')
                     else:
-                        file1 = open('%sArticle/[%s]%s' % (target, keywords, name), 'w+', encoding='gb18030')
+                        file1 = open('%s/Article/[%s]%s' % (target, keywords, name), 'w+', encoding='gb18030')
                     file2 = open(txt, 'r+', encoding='gb18030')
                     for line in file2:
                         file1.write(line)

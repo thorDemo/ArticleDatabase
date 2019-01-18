@@ -7,7 +7,7 @@ from threadpool import ThreadPool, makeRequests
 config = ConfigParser()
 config.read('config.ini', 'utf-8')
 arg = []
-for num in range(1, 8):
+for num in range(1, 14):
     try:
         target = config.get('article', 'target%s' % num)
         path = config.get('article', 'path%s' % num)

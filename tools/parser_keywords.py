@@ -1,7 +1,7 @@
 from mylib.items import Keywords, db
 
 
-file = open('C:/Users/Administrator/Desktop/mingxing.txt', 'r', encoding='utf-8')
+file = open('C:/Users/Administrator/Desktop/jiaju.txt', 'r', encoding='utf-8')
 
 arg = []
 for line in file:
@@ -10,7 +10,7 @@ for line in file:
         continue
     data = {
         'keyword': temp_array[0],
-        'type': 'bagua',
+        'type': 'child',
         'pc_index': temp_array[2],
         'bd_index': temp_array[3],
         'pc_search': temp_array[4],
